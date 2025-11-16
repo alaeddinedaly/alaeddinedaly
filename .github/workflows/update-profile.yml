@@ -26,13 +26,13 @@ jobs:
       
       - name: Install dependencies
         run: |
-          pip install requests Pillow
+          pip install requests
       
       - name: Generate ASCII Profile
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python generate_profile.py
+          python generate_svg.py
       
       - name: Commit and push if changed
         run: |

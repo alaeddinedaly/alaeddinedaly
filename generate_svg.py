@@ -14,32 +14,32 @@ GITHUB_USERNAME = "alaeddinedaly"
 GITHUB_TOKEN = os.getenv('GH_TOKEN', '')
 
 # ============================================================
-# 🎨 CUSTOMIZE YOUR PROFILE HERE
+# CUSTOMIZE YOUR PROFILE HERE
 # ============================================================
 # Update these with YOUR information:
 
 PERSONAL_INFO = {
-    'location': 'Tunis, Tunisia 🇹🇳',
-    'status': '🚀 Full-Stack Developer & AI Enthusiast',
-    'company': 'Independent Developer',  # Or your company name
+    'location': 'Tunis, Tunisia',
+    'status': 'Full-Stack Developer & AI Enthusiast',
+    'company': 'Independent Developer',
     'shell': 'Bash, Zsh, PowerShell',
     'ide': 'VSCode, IntelliJ IDEA, PyCharm',
     
     # Update with YOUR tech stack:
-    'frontend': 'React ⚛️, TypeScript, Tailwind CSS 🎨, Next.js',
-    'backend': 'Spring Boot ☕, Node.js 🟢, Express, Python 🐍',
-    'database': 'PostgreSQL 🐘, MongoDB 🍃, MySQL, Redis 🔴',
-    'languages_real': 'Arabic 🇹🇳, French 🇫🇷, English 🇺🇸',
+    'frontend': 'React, TypeScript, Tailwind CSS, Next.js',
+    'backend': 'Spring Boot, Node.js, Express, Python',
+    'database': 'PostgreSQL, MongoDB, MySQL, Redis',
+    'languages_real': 'Arabic, French, English',
     
     # Your focus areas:
     'focus_ai': 'Machine Learning, NLP, Generative AI, Computer Vision',
     'focus_security': 'JWT, OAuth, Authentication, Secure APIs',
-    'focus_cloud': 'Docker 🐳, CI/CD, AWS, Linux 🐧',
-    'currently': 'Building AI-powered applications & exploring Web3 🌐',
+    'focus_cloud': 'Docker, CI/CD, AWS, Linux',
+    'currently': 'Building AI-powered applications & exploring Web3',
     
     # Your contact info:
     'email_personal': 'dalyalaeddine@gmail.com',
-    'email_work': '',  # Leave empty if none
+    'email_work': '',
     'linkedin': 'linkedin.com/in/daly-ala-eddine',
     'portfolio': 'aladin-daly-dev.vercel.app',
 }
@@ -50,14 +50,14 @@ def fetch_github_stats() -> Dict:
     """Fetch comprehensive GitHub statistics"""
     headers = {'Authorization': f'token {GITHUB_TOKEN}'} if GITHUB_TOKEN else {}
     
-    print("📡 Fetching user data...")
+    print("Fetching user data...")
     # User data
     user_url = f"https://api.github.com/users/{GITHUB_USERNAME}"
     user_response = requests.get(user_url, headers=headers)
     user_response.raise_for_status()
     user_data = user_response.json()
     
-    print("📡 Fetching repositories...")
+    print("Fetching repositories...")
     # Repos
     repos_url = f"https://api.github.com/users/{GITHUB_USERNAME}/repos?per_page=100"
     repos_response = requests.get(repos_url, headers=headers)
@@ -68,10 +68,10 @@ def fetch_github_stats() -> Dict:
     total_stars = sum(r.get('stargazers_count', 0) for r in repos if isinstance(r, dict))
     total_forks = sum(r.get('forks_count', 0) for r in repos if isinstance(r, dict))
     
-    print("📡 Analyzing languages...")
+    print("Analyzing languages...")
     # Languages
     languages = {}
-    for repo in repos[:20]:  # Limit to prevent rate limiting
+    for repo in repos[:20]:
         if isinstance(repo, dict) and not repo.get('fork', False):
             lang = repo.get('language')
             if lang:
@@ -90,6 +90,10 @@ def fetch_github_stats() -> Dict:
     months = (age_delta.days % 365) // 30
     days = (age_delta.days % 365) % 30
     
+    # Calculate total lines (rough estimate)
+    total_additions = stats['repos'] * 150  # Rough estimate
+    total_deletions = stats['repos'] * 50   # Rough estimate
+    
     return {
         'name': user_data.get('name', GITHUB_USERNAME),
         'login': user_data.get('login', GITHUB_USERNAME),
@@ -104,12 +108,13 @@ def fetch_github_stats() -> Dict:
         'contributed_repos': contributed_repos,
         'languages': ', '.join(lang_names) if lang_names else 'Python, TypeScript, Java',
         'account_age': f"{years} years, {months} months, {days} days",
-        'updated': datetime.now().strftime('%B %d, %Y at %H:%M UTC')
+        'updated': datetime.now().strftime('%B %d, %Y at %H:%M UTC'),
+        'total_additions': total_additions,
+        'total_deletions': total_deletions,
     }
 
 def get_custom_avatar_art() -> List[str]:
-    """Return custom ASCII art - you can customize this!"""
-    # This is a generic developer avatar - customize it to look like you!
+    """Return custom ASCII art"""
     return [
         "::::::::::::::----=++==-=-::------------",
         "::::::::::=+*%@@@#@@@@@@#%=-------------",
@@ -150,102 +155,106 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
     # Create the stats sections
     lines = []
     
-    # Header line - MORE COLORFUL!
-    header = f"👨‍💻 {stats['login']}@github"
+    # Header line with ANSI color codes
+    header = f"{stats['login']}@github"
     separator = "━" * 80
-    lines.append(f"{' ' * max_ascii_width}  {header} {separator[:75-len(header)]}")
+    lines.append(f"{' ' * max_ascii_width}  \033[1;36m{header}\033[0m {separator[:75-len(header)]}")
     
-    # Info sections with ASCII art on the left - MORE COLORFUL!
+    # Info sections with ASCII art on the left
     info_lines = [
-        ("🌍 Location:", PERSONAL_INFO['location']),
-        ("⏰ Uptime:", stats['account_age']),
-        ("💼 Status:", PERSONAL_INFO['status']),
-        ("🏢 Company:", PERSONAL_INFO['company']),
-        ("🐚 Shell:", PERSONAL_INFO['shell']),
-        ("⚡ IDE:", PERSONAL_INFO['ide']),
+        ("\033[1;33mLocation:\033[0m", PERSONAL_INFO['location']),
+        ("\033[1;33mUptime:\033[0m", stats['account_age']),
+        ("\033[1;33mStatus:\033[0m", PERSONAL_INFO['status']),
+        ("\033[1;33mCompany:\033[0m", PERSONAL_INFO['company']),
+        ("\033[1;33mShell:\033[0m", PERSONAL_INFO['shell']),
+        ("\033[1;33mIDE:\033[0m", PERSONAL_INFO['ide']),
         ("", ""),
-        ("💻 Languages:", stats['languages']),
-        ("🎨 Frontend:", PERSONAL_INFO['frontend']),
-        ("🔧 Backend:", PERSONAL_INFO['backend']),
-        ("🗄️  Database:", PERSONAL_INFO['database']),
-        ("🌐 Speaking:", PERSONAL_INFO['languages_real']),
+        ("\033[1;32mLanguages:\033[0m", stats['languages']),
+        ("\033[1;32mFrontend:\033[0m", PERSONAL_INFO['frontend']),
+        ("\033[1;32mBackend:\033[0m", PERSONAL_INFO['backend']),
+        ("\033[1;32mDatabase:\033[0m", PERSONAL_INFO['database']),
+        ("\033[1;32mSpeaking:\033[0m", PERSONAL_INFO['languages_real']),
         ("", ""),
-        ("🤖 AI/ML:", PERSONAL_INFO['focus_ai']),
-        ("🔐 Security:", PERSONAL_INFO['focus_security']),
-        ("☁️  Cloud:", PERSONAL_INFO['focus_cloud']),
-        ("🎯 Currently:", PERSONAL_INFO['currently']),
+        ("\033[1;35mAI/ML:\033[0m", PERSONAL_INFO['focus_ai']),
+        ("\033[1;35mSecurity:\033[0m", PERSONAL_INFO['focus_security']),
+        ("\033[1;35mCloud:\033[0m", PERSONAL_INFO['focus_cloud']),
+        ("\033[1;35mCurrently:\033[0m", PERSONAL_INFO['currently']),
     ]
     
     # Combine ASCII art with info
     for i, (label, value) in enumerate(info_lines):
         ascii_line = padded_ascii[i] if i < len(padded_ascii) else ' ' * max_ascii_width
         if label:
-            dots = '.' * max(1, 25 - len(label))
-            lines.append(f"{ascii_line}  .{label}{dots}{value}")
+            # Remove ANSI codes for dot calculation
+            label_plain = label.replace('\033[1;33m', '').replace('\033[1;32m', '').replace('\033[1;35m', '').replace('\033[0m', '')
+            dots = '.' * max(1, 20 - len(label_plain))
+            lines.append(f"{ascii_line}  {label}{dots}{value}")
         else:
-            lines.append(f"{ascii_line}  .")
+            lines.append(ascii_line)
     
-    # Fill remaining ASCII art lines WITHOUT the dot
+    # Fill remaining ASCII art lines
     for i in range(len(info_lines), len(padded_ascii)):
         lines.append(padded_ascii[i])
     
-    # Contact section - MORE COLORFUL!
+    # Contact section
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  ━━ 📫 Contact ━━{separator[:65]}")
+    lines.append(f"{' ' * max_ascii_width}  \033[1;36m━━ Contact ━━\033[0m{separator[:65]}")
     
     contact_lines = [
-        ("📧 Email:", PERSONAL_INFO['email_personal']),
+        ("\033[1;34mEmail:\033[0m", PERSONAL_INFO['email_personal']),
     ]
     
     if PERSONAL_INFO['email_work']:
-        contact_lines.append(("💼 Work:", PERSONAL_INFO['email_work']))
+        contact_lines.append(("\033[1;34mWork:\033[0m", PERSONAL_INFO['email_work']))
     
     contact_lines.extend([
-        ("💼 LinkedIn:", PERSONAL_INFO['linkedin']),
-        ("🐙 GitHub:", f"github.com/{stats['login']}"),
-        ("🌐 Portfolio:", PERSONAL_INFO['portfolio']),
+        ("\033[1;34mLinkedIn:\033[0m", PERSONAL_INFO['linkedin']),
+        ("\033[1;34mGitHub:\033[0m", f"github.com/{stats['login']}"),
+        ("\033[1;34mPortfolio:\033[0m", PERSONAL_INFO['portfolio']),
     ])
     
     for label, value in contact_lines:
-        dots = '.' * max(1, 25 - len(label))
-        lines.append(f"{' ' * max_ascii_width}  .{label}{dots}{value}")
+        label_plain = label.replace('\033[1;34m', '').replace('\033[0m', '')
+        dots = '.' * max(1, 20 - len(label_plain))
+        lines.append(f"{' ' * max_ascii_width}  {label}{dots}{value}")
     
-    # GitHub Stats section - MORE COLORFUL!
+    # GitHub Stats section
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  ━━ 📊 GitHub Stats ━━{separator[:60]}")
+    lines.append(f"{' ' * max_ascii_width}  \033[1;36m━━ GitHub Stats ━━\033[0m{separator[:60]}")
     
-    # Format numbers with commas
-    repos_str = f"📦 {stats['repos']}"
-    contrib_str = f"{{✨ Contributed: {stats['contributed_repos']}}}"
-    stars_str = f"⭐ Stars: {stats['stars']}"
+    # Format numbers
+    repos_str = f"{stats['repos']}"
+    contrib_str = f"{{Contributed: {stats['contributed_repos']}}}"
+    stars_str = f"Stars: {stats['stars']}"
     
     stats_lines = [
-        (f"📚 Repositories:", f"{repos_str} {contrib_str} | {stars_str}"),
-        (f"💾 Commits:", f"~{stats['repos'] * 25} (estimated) | 👥 Followers: {stats['followers']}"),
-        (f"🔱 Forks:", f"{stats['forks']} | 🔗 Following: {stats['following']}"),
-        (f"🔥 Streak:", "Building daily! 💪"),
+        ("\033[1;31mRepositories:\033[0m", f"{repos_str} {contrib_str} | {stars_str}"),
+        ("\033[1;31mCommits:\033[0m", f"~{stats['repos'] * 25} (estimated) | Followers: {stats['followers']}"),
+        ("\033[1;31mForks:\033[0m", f"{stats['forks']} | Following: {stats['following']}"),
+        ("\033[1;31mTotal Lines:\033[0m", f"+{stats['total_additions']:,} / -{stats['total_deletions']:,}"),
+        ("\033[1;31mStreak:\033[0m", "Building daily!"),
     ]
     
     for label, value in stats_lines:
-        dots = '.' * max(1, 25 - len(label))
-        lines.append(f"{' ' * max_ascii_width}  .{label}{dots}{value}")
+        label_plain = label.replace('\033[1;31m', '').replace('\033[0m', '')
+        dots = '.' * max(1, 20 - len(label_plain))
+        lines.append(f"{' ' * max_ascii_width}  {label}{dots}{value}")
     
-    # Footer - MORE COLORFUL!
+    # Footer
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  🕐 Last updated: {stats['updated']}")
-    lines.append(f"{' ' * max_ascii_width}  🤖 Generated with ❤️  by GitHub Actions")
+    lines.append(f"{' ' * max_ascii_width}  Last updated: {stats['updated']}")
     
     # Wrap in code block for monospace rendering
-    readme = "```\n" + "\n".join(lines) + "\n```"
+    readme = "```ansi\n" + "\n".join(lines) + "\n```"
     
-    # Add colorful badges and sections OUTSIDE the code block
+    # Add badges and sections OUTSIDE the code block
     readme += f"""
 
 ---
 
 <div align="center">
 
-## 🚀 Tech Stack & Tools
+## Tech Stack & Tools
 
 ### Languages
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
@@ -277,7 +286,7 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
 
 <div align="center">
 
-### 🔗 Connect With Me
+### Connect With Me
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)]({PERSONAL_INFO['portfolio']})
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://{PERSONAL_INFO['linkedin']})
@@ -288,7 +297,7 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
 ---
 
 <details>
-<summary>📊 Detailed GitHub Statistics</summary>
+<summary>Detailed GitHub Statistics</summary>
 
 <br>
 
@@ -309,7 +318,7 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
 ---
 
 <div align="center">
-  <sub>⚡ This profile auto-updates daily via GitHub Actions</sub>
+  <sub>This profile auto-updates daily via GitHub Actions</sub>
 </div>
 """
     
@@ -319,38 +328,33 @@ def main():
     """Main execution function"""
     try:
         print("=" * 60)
-        print("🚀 GitHub Profile ASCII Generator")
+        print("GitHub Profile ASCII Generator")
         print("=" * 60)
         
         stats = fetch_github_stats()
         
-        print(f"\n✅ Stats fetched!")
-        print(f"   👤 {stats['name']} (@{stats['login']})")
-        print(f"   📦 Repos: {stats['repos']}")
-        print(f"   ⭐ Stars: {stats['stars']}")
-        print(f"   👥 Followers: {stats['followers']}")
+        print(f"\nStats fetched!")
+        print(f"   {stats['name']} (@{stats['login']})")
+        print(f"   Repos: {stats['repos']}")
+        print(f"   Stars: {stats['stars']}")
+        print(f"   Followers: {stats['followers']}")
         
-        print("\n🎨 Using custom ASCII art...")
+        print("\nUsing custom ASCII art...")
         ascii_art = get_custom_avatar_art()
         
-        print("📝 Generating README...")
+        print("Generating README...")
         readme = create_readme(stats, ascii_art)
         
-        print("💾 Writing README.md...")
+        print("Writing README.md...")
         with open("README.md", "w", encoding="utf-8") as f:
             f.write(readme)
         
         print("\n" + "=" * 60)
-        print("✅ SUCCESS! README.md created")
+        print("SUCCESS! README.md created")
         print("=" * 60)
         
-        print("\n💡 Next steps:")
-        print("   1. Update contact info in the script")
-        print("   2. Customize the ASCII art in get_custom_avatar_art()")
-        print("   3. Adjust info_lines with your real data")
-        
     except Exception as e:
-        print(f"\n❌ ERROR: {e}")
+        print(f"\nERROR: {e}")
         import traceback
         traceback.print_exc()
         raise

@@ -13,6 +13,39 @@ from typing import Dict, List
 GITHUB_USERNAME = "alaeddinedaly"
 GITHUB_TOKEN = os.getenv('GH_TOKEN', '')
 
+# ============================================================
+# 🎨 CUSTOMIZE YOUR PROFILE HERE
+# ============================================================
+# Update these with YOUR information:
+
+PERSONAL_INFO = {
+    'location': 'Tunis, Tunisia 🇹🇳',
+    'status': '🚀 Full-Stack Developer & AI Enthusiast',
+    'company': 'Independent Developer',  # Or your company name
+    'shell': 'Bash, Zsh, PowerShell',
+    'ide': 'VSCode, IntelliJ IDEA, PyCharm',
+    
+    # Update with YOUR tech stack:
+    'frontend': 'React ⚛️, TypeScript, Tailwind CSS 🎨, Next.js',
+    'backend': 'Spring Boot ☕, Node.js 🟢, Express, Python 🐍',
+    'database': 'PostgreSQL 🐘, MongoDB 🍃, MySQL, Redis 🔴',
+    'languages_real': 'Arabic 🇹🇳, French 🇫🇷, English 🇺🇸',
+    
+    # Your focus areas:
+    'focus_ai': 'Machine Learning, NLP, Generative AI, Computer Vision',
+    'focus_security': 'JWT, OAuth, Authentication, Secure APIs',
+    'focus_cloud': 'Docker 🐳, CI/CD, AWS, Linux 🐧',
+    'currently': 'Building AI-powered applications & exploring Web3 🌐',
+    
+    # Your contact info:
+    'email_personal': 'dalyalaeddine@gmail.com',
+    'email_work': '',  # Leave empty if none
+    'linkedin': 'linkedin.com/in/daly-ala-eddine',
+    'portfolio': 'aladin-daly-dev.vercel.app',
+}
+
+# ============================================================
+
 def fetch_github_stats() -> Dict:
     """Fetch comprehensive GitHub statistics"""
     headers = {'Authorization': f'token {GITHUB_TOKEN}'} if GITHUB_TOKEN else {}
@@ -75,7 +108,8 @@ def fetch_github_stats() -> Dict:
     }
 
 def get_custom_avatar_art() -> List[str]:
-    """Your custom ASCII art avatar"""
+    """Return custom ASCII art - you can customize this!"""
+    # This is a generic developer avatar - customize it to look like you!
     return [
         "::::::::::::::----=++==-=-::------------",
         "::::::::::=+*%@@@#@@@@@@#%=-------------",
@@ -116,28 +150,30 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
     # Create the stats sections
     lines = []
     
-    # Header line
-    header = f"{stats['login']}@github"
-    separator = "—" * 80
-    lines.append(f"{' ' * max_ascii_width}  {header}—{separator[:77-len(header)]}")
+    # Header line - MORE COLORFUL!
+    header = f"👨‍💻 {stats['login']}@github"
+    separator = "━" * 80
+    lines.append(f"{' ' * max_ascii_width}  {header} {separator[:75-len(header)]}")
     
-    # Info sections with ASCII art on the left
+    # Info sections with ASCII art on the left - MORE COLORFUL!
     info_lines = [
-        ("OS:", f"{stats['location']} | Full-Stack Developer"),
-        ("Uptime:", stats['account_age']),
-        ("Host:", stats['company'] if stats['company'] else "Independent Developer"),
-        ("Shell:", "Bash, Zsh, PowerShell"),
-        ("IDE:", "VSCode, IntelliJ IDEA, PyCharm"),
+        ("🌍 Location:", PERSONAL_INFO['location']),
+        ("⏰ Uptime:", stats['account_age']),
+        ("💼 Status:", PERSONAL_INFO['status']),
+        ("🏢 Company:", PERSONAL_INFO['company']),
+        ("🐚 Shell:", PERSONAL_INFO['shell']),
+        ("⚡ IDE:", PERSONAL_INFO['ide']),
         ("", ""),
-        ("Languages.Programming:", stats['languages']),
-        ("Languages.Framework:", "React, Spring Boot, Node.js, Express"),
-        ("Languages.Database:", "PostgreSQL, MongoDB, Redis"),
-        ("Languages.Real:", "Arabic, French, English"),
+        ("💻 Languages:", stats['languages']),
+        ("🎨 Frontend:", PERSONAL_INFO['frontend']),
+        ("🔧 Backend:", PERSONAL_INFO['backend']),
+        ("🗄️  Database:", PERSONAL_INFO['database']),
+        ("🌐 Speaking:", PERSONAL_INFO['languages_real']),
         ("", ""),
-        ("Focus.AI:", "Machine Learning, NLP, Computer Vision"),
-        ("Focus.Backend:", "REST APIs, Microservices, Authentication"),
-        ("Focus.Frontend:", "React, TypeScript, Modern CSS"),
-        ("Focus.Tools:", "Git, Docker, CI/CD, Linux"),
+        ("🤖 AI/ML:", PERSONAL_INFO['focus_ai']),
+        ("🔐 Security:", PERSONAL_INFO['focus_security']),
+        ("☁️  Cloud:", PERSONAL_INFO['focus_cloud']),
+        ("🎯 Currently:", PERSONAL_INFO['currently']),
     ]
     
     # Combine ASCII art with info
@@ -149,56 +185,94 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
         else:
             lines.append(f"{ascii_line}  .")
     
-    # Fill remaining ASCII art lines
+    # Fill remaining ASCII art lines WITHOUT the dot
     for i in range(len(info_lines), len(padded_ascii)):
-        lines.append(f"{padded_ascii[i]}  .")
+        lines.append(padded_ascii[i])
     
-    # Contact section
+    # Contact section - MORE COLORFUL!
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  — Contact—{separator[:71]}")
+    lines.append(f"{' ' * max_ascii_width}  ━━ 📫 Contact ━━{separator[:65]}")
     
     contact_lines = [
-        ("Email.Personal:", "your.email@example.com"),
-        ("Email.Work:", "work@company.com (optional)"),
-        ("LinkedIn:", "linkedin.com/in/yourprofile"),
-        ("GitHub:", f"github.com/{stats['login']}"),
-        ("Portfolio:", "yourportfolio.com"),
-        ("Twitter:", "@yourhandle"),
+        ("📧 Email:", PERSONAL_INFO['email_personal']),
     ]
+    
+    if PERSONAL_INFO['email_work']:
+        contact_lines.append(("💼 Work:", PERSONAL_INFO['email_work']))
+    
+    contact_lines.extend([
+        ("💼 LinkedIn:", PERSONAL_INFO['linkedin']),
+        ("🐙 GitHub:", f"github.com/{stats['login']}"),
+        ("🌐 Portfolio:", PERSONAL_INFO['portfolio']),
+        ("🐦 Twitter:", PERSONAL_INFO['twitter']),
+    ])
     
     for label, value in contact_lines:
         dots = '.' * max(1, 25 - len(label))
         lines.append(f"{' ' * max_ascii_width}  .{label}{dots}{value}")
     
-    # GitHub Stats section
+    # GitHub Stats section - MORE COLORFUL!
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  — GitHub Stats—{separator[:66]}")
+    lines.append(f"{' ' * max_ascii_width}  ━━ 📊 GitHub Stats ━━{separator[:60]}")
     
     # Format numbers with commas
-    repos_str = f"{stats['repos']}"
-    contrib_str = f"{{Contributed: {stats['contributed_repos']}}}"
-    stars_str = f"Stars: {stats['stars']}"
+    repos_str = f"📦 {stats['repos']}"
+    contrib_str = f"{{✨ Contributed: {stats['contributed_repos']}}}"
+    stars_str = f"⭐ Stars: {stats['stars']}"
     
     stats_lines = [
-        (f"Repos:", f"{repos_str} {contrib_str} | {stars_str}"),
-        (f"Commits:", f"~{stats['repos'] * 25} (estimated) | Followers: {stats['followers']}"),
-        (f"Forks:", f"{stats['forks']} | Following: {stats['following']}"),
+        (f"📚 Repositories:", f"{repos_str} {contrib_str} | {stars_str}"),
+        (f"💾 Commits:", f"~{stats['repos'] * 25} (estimated) | 👥 Followers: {stats['followers']}"),
+        (f"🔱 Forks:", f"{stats['forks']} | 🔗 Following: {stats['following']}"),
+        (f"🔥 Streak:", "Building daily! 💪"),
     ]
     
     for label, value in stats_lines:
         dots = '.' * max(1, 25 - len(label))
         lines.append(f"{' ' * max_ascii_width}  .{label}{dots}{value}")
     
-    # Footer
+    # Footer - MORE COLORFUL!
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  Last updated: {stats['updated']}")
-    lines.append(f"{' ' * max_ascii_width}  Generated with ❤️ by GitHub Actions")
+    lines.append(f"{' ' * max_ascii_width}  🕐 Last updated: {stats['updated']}")
+    lines.append(f"{' ' * max_ascii_width}  🤖 Generated with ❤️  by GitHub Actions")
     
     # Wrap in code block for monospace rendering
     readme = "```\n" + "\n".join(lines) + "\n```"
     
-    # Add badges and additional info below
+    # Add colorful badges and sections OUTSIDE the code block
     readme += f"""
+
+---
+
+<div align="center">
+
+## 🚀 Tech Stack & Tools
+
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### Backend
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### Database & Tools
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
 
 ---
 
@@ -206,10 +280,11 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
 
 ### 🔗 Connect With Me
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://alaeddinedaly.github.io/portfolio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)]({PERSONAL_INFO['portfolio']})
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://{PERSONAL_INFO['linkedin']})
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:{PERSONAL_INFO['email_personal']})
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/{stats['login']})
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/{PERSONAL_INFO['twitter'].replace('@', '')})
 
 </div>
 

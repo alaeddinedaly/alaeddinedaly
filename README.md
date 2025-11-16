@@ -1,49 +1,80 @@
 ```
-                                          alaeddinedaly@github——————————————————————————————————————————————————————————
-::::::::::::::----=++==-=-::------------  .OS:......................None | Full-Stack Developer
-::::::::::=+*%@@@#@@@@@@#%=-------------  .Uptime:..................0 years, 11 months, 10 days
-::::::::-+%#@@@@@@@@@@@@@@@#+----------=  .Host:....................Independent Developer
-.::::::=%##@@@@@@@@@@@@@@@@@@*--------==  .Shell:...................Bash, Zsh, PowerShell
-...:::-%#@@@@##%%###@@@@@@@@@@%=----====  .IDE:.....................VSCode, IntelliJ IDEA, PyCharm
-....::+%@%+=-----===++*%%#@@@@@@+--===-   .
-....:=#@=.::-----=====++*%#@@@@@@===-.    .Languages.Programming:...Python, CSS, HTML, TypeScript
-....=#@+.::--------=====++*%@@@@@#=:      .Languages.Framework:.....React, Spring Boot, Node.js, Express
-....*@%:.:::::-=======++++++**#@@@.    :  .Languages.Database:......PostgreSQL, MongoDB, Redis
-...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  .Languages.Real:..........Arabic, French, English
-:.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  .
-:::.=%%:-%*++*%%*-.-*#@###%%%*+%@@.       .Focus.AI:................Machine Learning, NLP, Computer Vision
-:-:.-%%--==*#@@#=.:-+*##@@@@#*+*@#-::::.  .Focus.Backend:...........REST APIs, Microservices, Authentication
-::...=#-:+*###%+:.:-=++++++===++#*+=----  .Focus.Frontend:..........React, TypeScript, Modern CSS
-.     *-...:---: .:-==++=----===*+*+====  .Focus.Tools:.............Git, Docker, CI/CD, Linux
-     +=.  ..:-=:=%*+%#*+*++==++=+*++----  .
-     *=: :--====%@%%%##%*++***++++++----  .
-     -=-:====-==++***%%%%%%%*++=+=+=-=--  .
-      -::-===*%%%%%%%%##%%%*++==+=---:--  .
-       .::--=**+++*****+++++++++=-===**+  .
- ....   .:---=---=****+++++++++*::-=++++  .
-.....    .==----=+++++++++++***=  .-----  .
-..:-:.    :==--==--++=++++*****..  .---=  .
-.:-====:...-++====++*+******%%+..   .-==  .
-:-====+=:::.=**%%%%%%%%%%%%%%*=:..   :==  .
---==--==-::.:-=+**%%%%%%*%**+++-:..  .-=  .
-:::--==:. :::-----=*******+++=+=:::. .:=  .
+                                          👨‍💻 alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+::::::::::::::----=++==-=-::------------  .🌍 Location:..............Tunis, Tunisia 🇹🇳
+::::::::::=+*%@@@#@@@@@@#%=-------------  .⏰ Uptime:................0 years, 11 months, 10 days
+::::::::-+%#@@@@@@@@@@@@@@@#+----------=  .💼 Status:................🚀 Full-Stack Developer & AI Enthusiast
+.::::::=%##@@@@@@@@@@@@@@@@@@*--------==  .🏢 Company:...............Independent Developer
+...:::-%#@@@@##%%###@@@@@@@@@@%=----====  .🐚 Shell:.................Bash, Zsh, PowerShell
+....::+%@%+=-----===++*%%#@@@@@@+--===-   .⚡ IDE:...................VSCode, IntelliJ IDEA, PyCharm
+....:=#@=.::-----=====++*%#@@@@@@===-.    .
+....=#@+.::--------=====++*%@@@@@#=:      .💻 Languages:.............Python, CSS, HTML, TypeScript
+....*@%:.:::::-=======++++++**#@@@.    :  .🎨 Frontend:..............React ⚛️, TypeScript, Tailwind CSS 🎨, Next.js
+...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  .🔧 Backend:...............Spring Boot ☕, Node.js 🟢, Express, Python 🐍
+:.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  .🗄️  Database:............PostgreSQL 🐘, MongoDB 🍃, MySQL, Redis 🔴
+:::.=%%:-%*++*%%*-.-*#@###%%%*+%@@.       .🌐 Speaking:..............Arabic 🇹🇳, French 🇫🇷, English 🇺🇸
+:-:.-%%--==*#@@#=.:-+*##@@@@#*+*@#-::::.  .
+::...=#-:+*###%+:.:-=++++++===++#*+=----  .🤖 AI/ML:.................Machine Learning, NLP, Generative AI, Computer Vision
+.     *-...:---: .:-==++=----===*+*+====  .🔐 Security:..............JWT, OAuth, Authentication, Secure APIs
+     +=.  ..:-=:=%*+%#*+*++==++=+*++----  .☁️  Cloud:...............Docker 🐳, CI/CD, AWS, Linux 🐧
+     *=: :--====%@%%%##%*++***++++++----  .🎯 Currently:.............Building AI-powered applications & exploring Web3 🌐
+     -=-:====-==++***%%%%%%%*++=+=+=-=--
+      -::-===*%%%%%%%%##%%%*++==+=---:--
+       .::--=**+++*****+++++++++=-===**+
+ ....   .:---=---=****+++++++++*::-=++++
+.....    .==----=+++++++++++***=  .-----
+..:-:.    :==--==--++=++++*****..  .---=
+.:-====:...-++====++*+******%%+..   .-==
+:-====+=:::.=**%%%%%%%%%%%%%%*=:..   :==
+--==--==-::.:-=+**%%%%%%*%**+++-:..  .-=
+:::--==:. :::-----=*******+++=+=:::. .:=
 
-                                          — Contact————————————————————————————————————————————————————————————————————————
-                                          .Email.Personal:..........your.email@example.com
-                                          .Email.Work:..............work@company.com (optional)
-                                          .LinkedIn:................linkedin.com/in/yourprofile
-                                          .GitHub:..................github.com/alaeddinedaly
-                                          .Portfolio:...............yourportfolio.com
-                                          .Twitter:.................@yourhandle
+                                          ━━ 📫 Contact ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                          .📧 Email:.................dalyalaeddine@gmail.com
+                                          .💼 LinkedIn:..............linkedin.com/in/daly-ala-eddine
+                                          .🐙 GitHub:................github.com/alaeddinedaly
+                                          .🌐 Portfolio:.............aladin-daly-dev.vercel.app
 
-                                          — GitHub Stats———————————————————————————————————————————————————————————————————
-                                          .Repos:...................11 {Contributed: 11} | Stars: 0
-                                          .Commits:.................~275 (estimated) | Followers: 2
-                                          .Forks:...................0 | Following: 4
+                                          ━━ 📊 GitHub Stats ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                          .📚 Repositories:..........📦 11 {✨ Contributed: 11} | ⭐ Stars: 0
+                                          .💾 Commits:...............~275 (estimated) | 👥 Followers: 2
+                                          .🔱 Forks:.................0 | 🔗 Following: 4
+                                          .🔥 Streak:................Building daily! 💪
 
-                                          Last updated: November 16, 2025 at 10:31 UTC
-                                          Generated with ❤️ by GitHub Actions
+                                          🕐 Last updated: November 16, 2025 at 10:39 UTC
+                                          🤖 Generated with ❤️  by GitHub Actions
 ```
+
+---
+
+<div align="center">
+
+## 🚀 Tech Stack & Tools
+
+### Languages
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![Kotlin](https://img.shields.io/badge/Kotlin-7F52FF?style=for-the-badge&logo=kotlin&logoColor=white)
+
+### Frontend
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+
+### Backend
+![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+
+### Database & Tools
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
 
 ---
 
@@ -51,11 +82,10 @@
 
 ### 🔗 Connect With Me
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://alaeddinedaly.github.io/portfolio)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/yourprofile)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:your.email@example.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](aladin-daly-dev.vercel.app)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/daly-ala-eddine)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:dalyalaeddine@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/alaeddinedaly)
-
 </div>
 
 ---

@@ -90,9 +90,12 @@ def fetch_github_stats() -> Dict:
     months = (age_delta.days % 365) // 30
     days = (age_delta.days % 365) % 30
     
+    # Get public repos count from user_data
+    public_repos = user_data.get('public_repos', 0)
+    
     # Calculate total lines (rough estimate)
-    total_additions = stats['repos'] * 150  # Rough estimate
-    total_deletions = stats['repos'] * 50   # Rough estimate
+    total_additions = public_repos * 150
+    total_deletions = public_repos * 50
     
     return {
         'name': user_data.get('name', GITHUB_USERNAME),
@@ -100,7 +103,7 @@ def fetch_github_stats() -> Dict:
         'bio': user_data.get('bio', ''),
         'location': user_data.get('location', 'Tunisia'),
         'company': user_data.get('company', ''),
-        'repos': user_data.get('public_repos', 0),
+        'repos': public_repos,
         'stars': total_stars,
         'forks': total_forks,
         'followers': user_data.get('followers', 0),
@@ -288,7 +291,7 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
 
 ### Connect With Me
 
-[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)]({PERSONAL_INFO['portfolio']})
+[![Portfolio](https://img.shields.io/badge/Portfolio-FF5722?style=for-the-badge&logo=google-chrome&logoColor=white)](https://{PERSONAL_INFO['portfolio']})
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://{PERSONAL_INFO['linkedin']})
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:{PERSONAL_INFO['email_personal']})
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/{stats['login']})

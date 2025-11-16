@@ -1,36 +1,48 @@
 ```
-                            alaeddinedaly@github——————————————————————————————————————————————————————————
-        @@@@@@@@@@          .OS:......................None | Full-Stack Developer
-      @@@@@@@@@@@@@@        .Uptime:..................0 years, 11 months, 10 days
-    @@@@@@@@@@@@@@@@@@      .Host:....................Independent Developer
-   @@@@@@@@@@@@@@@@@@@@     .Shell:...................Bash, Zsh, PowerShell
-  @@@@@@@@  @@@@@@@@@@@@    .IDE:.....................VSCode, IntelliJ IDEA, PyCharm
-  @@@@@@@@  @@@@@@@@@@@@    .
- @@@@@@@@@@@@@@@@@@@@@@@@   .Languages.Programming:...Python, CSS, HTML, TypeScript
- @@@@@@@@@@@@@@@@@@@@@@@@   .Languages.Framework:.....React, Spring Boot, Node.js, Express
- @@@@@@@@@@@@@@@@@@@@@@@@   .Languages.Database:......PostgreSQL, MongoDB, Redis
-  @@@@@@@@@@@@@@@@@@@@@@    .Languages.Real:..........Arabic, French, English
-  @@@@@@@@@@@@@@@@@@@@@@    .
-   @@@@@@@@@@@@@@@@@@@@     .Focus.AI:................Machine Learning, NLP, Computer Vision
-    @@@@@@@@@@@@@@@@@@      .Focus.Backend:...........REST APIs, Microservices, Authentication
-      @@@@@@@@@@@@@@        .Focus.Frontend:..........React, TypeScript, Modern CSS
-        @@@@@@@@@@          .Focus.Tools:.............Git, Docker, CI/CD, Linux
+                                          alaeddinedaly@github——————————————————————————————————————————————————————————
+::::::::::::::----=++==-=-::------------  .OS:......................None | Full-Stack Developer
+::::::::::=+*%@@@#@@@@@@#%=-------------  .Uptime:..................0 years, 11 months, 10 days
+::::::::-+%#@@@@@@@@@@@@@@@#+----------=  .Host:....................Independent Developer
+.::::::=%##@@@@@@@@@@@@@@@@@@*--------==  .Shell:...................Bash, Zsh, PowerShell
+...:::-%#@@@@##%%###@@@@@@@@@@%=----====  .IDE:.....................VSCode, IntelliJ IDEA, PyCharm
+....::+%@%+=-----===++*%%#@@@@@@+--===-   .
+....:=#@=.::-----=====++*%#@@@@@@===-.    .Languages.Programming:...Python, CSS, HTML, TypeScript
+....=#@+.::--------=====++*%@@@@@#=:      .Languages.Framework:.....React, Spring Boot, Node.js, Express
+....*@%:.:::::-=======++++++**#@@@.    :  .Languages.Database:......PostgreSQL, MongoDB, Redis
+...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  .Languages.Real:..........Arabic, French, English
+:.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  .
+:::.=%%:-%*++*%%*-.-*#@###%%%*+%@@.       .Focus.AI:................Machine Learning, NLP, Computer Vision
+:-:.-%%--==*#@@#=.:-+*##@@@@#*+*@#-::::.  .Focus.Backend:...........REST APIs, Microservices, Authentication
+::...=#-:+*###%+:.:-=++++++===++#*+=----  .Focus.Frontend:..........React, TypeScript, Modern CSS
+.     *-...:---: .:-==++=----===*+*+====  .Focus.Tools:.............Git, Docker, CI/CD, Linux
+     +=.  ..:-=:=%*+%#*+*++==++=+*++----  .
+     *=: :--====%@%%%##%*++***++++++----  .
+     -=-:====-==++***%%%%%%%*++=+=+=-=--  .
+      -::-===*%%%%%%%%##%%%*++==+=---:--  .
+       .::--=**+++*****+++++++++=-===**+  .
+ ....   .:---=---=****+++++++++*::-=++++  .
+.....    .==----=+++++++++++***=  .-----  .
+..:-:.    :==--==--++=++++*****..  .---=  .
+.:-====:...-++====++*+******%%+..   .-==  .
+:-====+=:::.=**%%%%%%%%%%%%%%*=:..   :==  .
+--==--==-::.:-=+**%%%%%%*%**+++-:..  .-=  .
+:::--==:. :::-----=*******+++=+=:::. .:=  .
 
-                            — Contact————————————————————————————————————————————————————————————————————————
-                            .Email.Personal:..........your.email@example.com
-                            .Email.Work:..............work@company.com (optional)
-                            .LinkedIn:................linkedin.com/in/yourprofile
-                            .GitHub:..................github.com/alaeddinedaly
-                            .Portfolio:...............yourportfolio.com
-                            .Twitter:.................@yourhandle
+                                          — Contact————————————————————————————————————————————————————————————————————————
+                                          .Email.Personal:..........your.email@example.com
+                                          .Email.Work:..............work@company.com (optional)
+                                          .LinkedIn:................linkedin.com/in/yourprofile
+                                          .GitHub:..................github.com/alaeddinedaly
+                                          .Portfolio:...............yourportfolio.com
+                                          .Twitter:.................@yourhandle
 
-                            — GitHub Stats———————————————————————————————————————————————————————————————————
-                            .Repos:...................11 {Contributed: 11} | Stars: 0
-                            .Commits:.................~275 (estimated) | Followers: 2
-                            .Forks:...................0 | Following: 4
+                                          — GitHub Stats———————————————————————————————————————————————————————————————————
+                                          .Repos:...................11 {Contributed: 11} | Stars: 0
+                                          .Commits:.................~275 (estimated) | Followers: 2
+                                          .Forks:...................0 | Following: 4
 
-                            Last updated: November 16, 2025 at 10:24 UTC
-                            Generated with ❤️ by GitHub Actions
+                                          Last updated: November 16, 2025 at 10:31 UTC
+                                          Generated with ❤️ by GitHub Actions
 ```
 
 ---

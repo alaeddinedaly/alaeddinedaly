@@ -204,7 +204,6 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
         ("💼 LinkedIn:", PERSONAL_INFO['linkedin']),
         ("🐙 GitHub:", f"github.com/{stats['login']}"),
         ("🌐 Portfolio:", PERSONAL_INFO['portfolio']),
-        ("🐦 Twitter:", PERSONAL_INFO['twitter']),
     ])
     
     for label, value in contact_lines:
@@ -284,8 +283,6 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://{PERSONAL_INFO['linkedin']})
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:{PERSONAL_INFO['email_personal']})
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/{stats['login']})
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/{PERSONAL_INFO['twitter'].replace('@', '')})
-
 </div>
 
 ---

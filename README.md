@@ -1,22 +1,22 @@
-```ansi
-                                          [1;36malaeddinedaly@github[0m ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-::::::::::::::----=++==-=-::------------  [1;33mLocation:[0m...........Tunis, Tunisia
-::::::::::=+*%@@@#@@@@@@#%=-------------  [1;33mUptime:[0m.............0 years, 11 months, 10 days
-::::::::-+%#@@@@@@@@@@@@@@@#+----------=  [1;33mStatus:[0m.............Full-Stack Developer & AI Enthusiast
-.::::::=%##@@@@@@@@@@@@@@@@@@*--------==  [1;33mCompany:[0m............Independent Developer
-...:::-%#@@@@##%%###@@@@@@@@@@%=----====  [1;33mShell:[0m..............Bash, Zsh, PowerShell
-....::+%@%+=-----===++*%%#@@@@@@+--===-   [1;33mIDE:[0m................VSCode, IntelliJ IDEA, PyCharm
+```
+                                          alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+::::::::::::::----=++==-=-::------------  Location:......Tunis, Tunisia
+::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........0 years, 11 months, 10 days
+::::::::-+%#@@@@@@@@@@@@@@@#+----------=  Status:........Full-Stack Developer & AI Enthusiast
+.::::::=%##@@@@@@@@@@@@@@@@@@*--------==  Company:.......Independent Developer
+...:::-%#@@@@##%%###@@@@@@@@@@%=----====  Shell:.........Bash, Zsh, PowerShell
+....::+%@%+=-----===++*%%#@@@@@@+--===-   IDE:...........VSCode, IntelliJ IDEA, PyCharm
 ....:=#@=.::-----=====++*%#@@@@@@===-.  
-....=#@+.::--------=====++*%@@@@@#=:      [1;32mLanguages:[0m..........Python, CSS, HTML, TypeScript
-....*@%:.:::::-=======++++++**#@@@.    :  [1;32mFrontend:[0m...........React, TypeScript, Tailwind CSS, Next.js
-...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  [1;32mBackend:[0m............Spring Boot, Node.js, Express, Python
-:.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  [1;32mDatabase:[0m...........PostgreSQL, MongoDB, MySQL, Redis
-:::.=%%:-%*++*%%*-.-*#@###%%%*+%@@.       [1;32mSpeaking:[0m...........Arabic, French, English
+....=#@+.::--------=====++*%@@@@@#=:      Languages:.....Python, CSS, HTML, TypeScript
+....*@%:.:::::-=======++++++**#@@@.    :  Frontend:......React, TypeScript, Tailwind CSS, Next.js
+...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  Backend:.......Spring Boot, Node.js, Express, Python
+:.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  Database:......PostgreSQL, MongoDB, MySQL, Redis
+:::.=%%:-%*++*%%*-.-*#@###%%%*+%@@.       Speaking:......Arabic, French, English
 :-:.-%%--==*#@@#=.:-+*##@@@@#*+*@#-::::.
-::...=#-:+*###%+:.:-=++++++===++#*+=----  [1;35mAI/ML:[0m..............Machine Learning, NLP, Generative AI, Computer Vision
-.     *-...:---: .:-==++=----===*+*+====  [1;35mSecurity:[0m...........JWT, OAuth, Authentication, Secure APIs
-     +=.  ..:-=:=%*+%#*+*++==++=+*++----  [1;35mCloud:[0m..............Docker, CI/CD, AWS, Linux
-     *=: :--====%@%%%##%*++***++++++----  [1;35mCurrently:[0m..........Building AI-powered applications & exploring Web3
+::...=#-:+*###%+:.:-=++++++===++#*+=----  AI/ML:.........Machine Learning, NLP, Generative AI, Computer Vision
+.     *-...:---: .:-==++=----===*+*+====  Security:......JWT, OAuth, Authentication, Secure APIs
+     +=.  ..:-=:=%*+%#*+*++==++=+*++----  Cloud:.........Docker, CI/CD, AWS, Linux
+     *=: :--====%@%%%##%*++***++++++----  Currently:.....Building AI-powered applications & exploring Web3
      -=-:====-==++***%%%%%%%*++=+=+=-=--
       -::-===*%%%%%%%%##%%%*++==+=---:--
        .::--=**+++*****+++++++++=-===**+
@@ -28,20 +28,20 @@
 --==--==-::.:-=+**%%%%%%*%**+++-:..  .-=
 :::--==:. :::-----=*******+++=+=:::. .:=
 
-                                          [1;36m━━ Contact ━━[0m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                          [1;34mEmail:[0m..............dalyalaeddine@gmail.com
-                                          [1;34mLinkedIn:[0m...........linkedin.com/in/daly-ala-eddine
-                                          [1;34mGitHub:[0m.............github.com/alaeddinedaly
-                                          [1;34mPortfolio:[0m..........aladin-daly-dev.vercel.app
+                                          ━━ Contact ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                          Email:.........dalyalaeddine@gmail.com
+                                          LinkedIn:......linkedin.com/in/daly-ala-eddine
+                                          GitHub:........github.com/alaeddinedaly
+                                          Portfolio:.....aladin-daly-dev.vercel.app
 
-                                          [1;36m━━ GitHub Stats ━━[0m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                          [1;31mRepositories:[0m.......11 {Contributed: 11} | Stars: 0
-                                          [1;31mCommits:[0m............~275 (estimated) | Followers: 2
-                                          [1;31mForks:[0m..............0 | Following: 4
-                                          [1;31mTotal Lines:[0m........+1,650 / -550
-                                          [1;31mStreak:[0m.............Building daily!
+                                          ━━ GitHub Stats ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+                                          Repositories:..11 {Contributed: 11} | Stars: 0
+                                          Commits:.......~275 (estimated) | Followers: 2
+                                          Forks:.........0 | Following: 4
+                                          Total Lines:...+1,650 / -550
+                                          Streak:........Building daily!
 
-                                          Last updated: November 16, 2025 at 11:36 UTC
+                                          Last updated: November 16, 2025 at 11:39 UTC
 ```
 
 ---

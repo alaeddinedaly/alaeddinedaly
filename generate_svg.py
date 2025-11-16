@@ -158,39 +158,37 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
     # Create the stats sections
     lines = []
     
-    # Header line with ANSI color codes
+    # Header line
     header = f"{stats['login']}@github"
     separator = "━" * 80
-    lines.append(f"{' ' * max_ascii_width}  \033[1;36m{header}\033[0m {separator[:75-len(header)]}")
+    lines.append(f"{' ' * max_ascii_width}  {header} {separator[:75-len(header)]}")
     
     # Info sections with ASCII art on the left
     info_lines = [
-        ("\033[1;33mLocation:\033[0m", PERSONAL_INFO['location']),
-        ("\033[1;33mUptime:\033[0m", stats['account_age']),
-        ("\033[1;33mStatus:\033[0m", PERSONAL_INFO['status']),
-        ("\033[1;33mCompany:\033[0m", PERSONAL_INFO['company']),
-        ("\033[1;33mShell:\033[0m", PERSONAL_INFO['shell']),
-        ("\033[1;33mIDE:\033[0m", PERSONAL_INFO['ide']),
+        ("Location:", PERSONAL_INFO['location']),
+        ("Uptime:", stats['account_age']),
+        ("Status:", PERSONAL_INFO['status']),
+        ("Company:", PERSONAL_INFO['company']),
+        ("Shell:", PERSONAL_INFO['shell']),
+        ("IDE:", PERSONAL_INFO['ide']),
         ("", ""),
-        ("\033[1;32mLanguages:\033[0m", stats['languages']),
-        ("\033[1;32mFrontend:\033[0m", PERSONAL_INFO['frontend']),
-        ("\033[1;32mBackend:\033[0m", PERSONAL_INFO['backend']),
-        ("\033[1;32mDatabase:\033[0m", PERSONAL_INFO['database']),
-        ("\033[1;32mSpeaking:\033[0m", PERSONAL_INFO['languages_real']),
+        ("Languages:", stats['languages']),
+        ("Frontend:", PERSONAL_INFO['frontend']),
+        ("Backend:", PERSONAL_INFO['backend']),
+        ("Database:", PERSONAL_INFO['database']),
+        ("Speaking:", PERSONAL_INFO['languages_real']),
         ("", ""),
-        ("\033[1;35mAI/ML:\033[0m", PERSONAL_INFO['focus_ai']),
-        ("\033[1;35mSecurity:\033[0m", PERSONAL_INFO['focus_security']),
-        ("\033[1;35mCloud:\033[0m", PERSONAL_INFO['focus_cloud']),
-        ("\033[1;35mCurrently:\033[0m", PERSONAL_INFO['currently']),
+        ("AI/ML:", PERSONAL_INFO['focus_ai']),
+        ("Security:", PERSONAL_INFO['focus_security']),
+        ("Cloud:", PERSONAL_INFO['focus_cloud']),
+        ("Currently:", PERSONAL_INFO['currently']),
     ]
     
     # Combine ASCII art with info
     for i, (label, value) in enumerate(info_lines):
         ascii_line = padded_ascii[i] if i < len(padded_ascii) else ' ' * max_ascii_width
         if label:
-            # Remove ANSI codes for dot calculation
-            label_plain = label.replace('\033[1;33m', '').replace('\033[1;32m', '').replace('\033[1;35m', '').replace('\033[0m', '')
-            dots = '.' * max(1, 20 - len(label_plain))
+            dots = '.' * max(1, 15 - len(label))
             lines.append(f"{ascii_line}  {label}{dots}{value}")
         else:
             lines.append(ascii_line)
@@ -201,29 +199,28 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
     
     # Contact section
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  \033[1;36m━━ Contact ━━\033[0m{separator[:65]}")
+    lines.append(f"{' ' * max_ascii_width}  ━━ Contact ━━{separator[:65]}")
     
     contact_lines = [
-        ("\033[1;34mEmail:\033[0m", PERSONAL_INFO['email_personal']),
+        ("Email:", PERSONAL_INFO['email_personal']),
     ]
     
     if PERSONAL_INFO['email_work']:
-        contact_lines.append(("\033[1;34mWork:\033[0m", PERSONAL_INFO['email_work']))
+        contact_lines.append(("Work:", PERSONAL_INFO['email_work']))
     
     contact_lines.extend([
-        ("\033[1;34mLinkedIn:\033[0m", PERSONAL_INFO['linkedin']),
-        ("\033[1;34mGitHub:\033[0m", f"github.com/{stats['login']}"),
-        ("\033[1;34mPortfolio:\033[0m", PERSONAL_INFO['portfolio']),
+        ("LinkedIn:", PERSONAL_INFO['linkedin']),
+        ("GitHub:", f"github.com/{stats['login']}"),
+        ("Portfolio:", PERSONAL_INFO['portfolio']),
     ])
     
     for label, value in contact_lines:
-        label_plain = label.replace('\033[1;34m', '').replace('\033[0m', '')
-        dots = '.' * max(1, 20 - len(label_plain))
+        dots = '.' * max(1, 15 - len(label))
         lines.append(f"{' ' * max_ascii_width}  {label}{dots}{value}")
     
     # GitHub Stats section
     lines.append("")
-    lines.append(f"{' ' * max_ascii_width}  \033[1;36m━━ GitHub Stats ━━\033[0m{separator[:60]}")
+    lines.append(f"{' ' * max_ascii_width}  ━━ GitHub Stats ━━{separator[:60]}")
     
     # Format numbers
     repos_str = f"{stats['repos']}"
@@ -231,16 +228,15 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
     stars_str = f"Stars: {stats['stars']}"
     
     stats_lines = [
-        ("\033[1;31mRepositories:\033[0m", f"{repos_str} {contrib_str} | {stars_str}"),
-        ("\033[1;31mCommits:\033[0m", f"~{stats['repos'] * 25} (estimated) | Followers: {stats['followers']}"),
-        ("\033[1;31mForks:\033[0m", f"{stats['forks']} | Following: {stats['following']}"),
-        ("\033[1;31mTotal Lines:\033[0m", f"+{stats['total_additions']:,} / -{stats['total_deletions']:,}"),
-        ("\033[1;31mStreak:\033[0m", "Building daily!"),
+        ("Repositories:", f"{repos_str} {contrib_str} | {stars_str}"),
+        ("Commits:", f"~{stats['repos'] * 25} (estimated) | Followers: {stats['followers']}"),
+        ("Forks:", f"{stats['forks']} | Following: {stats['following']}"),
+        ("Total Lines:", f"+{stats['total_additions']:,} / -{stats['total_deletions']:,}"),
+        ("Streak:", "Building daily!"),
     ]
     
     for label, value in stats_lines:
-        label_plain = label.replace('\033[1;31m', '').replace('\033[0m', '')
-        dots = '.' * max(1, 20 - len(label_plain))
+        dots = '.' * max(1, 15 - len(label))
         lines.append(f"{' ' * max_ascii_width}  {label}{dots}{value}")
     
     # Footer
@@ -248,7 +244,7 @@ def create_readme(stats: Dict, ascii_art: List[str]) -> str:
     lines.append(f"{' ' * max_ascii_width}  Last updated: {stats['updated']}")
     
     # Wrap in code block for monospace rendering
-    readme = "```ansi\n" + "\n".join(lines) + "\n```"
+    readme = "```\n" + "\n".join(lines) + "\n```"
     
     # Add badges and sections OUTSIDE the code block
     readme += f"""

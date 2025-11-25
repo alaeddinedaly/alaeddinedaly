@@ -1,13 +1,13 @@
 ```
                                           alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ::::::::::::::----=++==-=-::------------  Location:......Tunis, Tunisia
-::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........0 years, 11 months, 18 days
+::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........0 years, 11 months, 19 days
 ::::::::-+%#@@@@@@@@@@@@@@@#+----------=  Status:........Full-Stack Developer & AI Enthusiast
 .::::::=%##@@@@@@@@@@@@@@@@@@*--------==  Company:.......Independent Developer
 ...:::-%#@@@@##%%###@@@@@@@@@@%=----====  Shell:.........Bash, Zsh, PowerShell
 ....::+%@%+=-----===++*%%#@@@@@@+--===-   IDE:...........VSCode, IntelliJ IDEA, PyCharm
 ....:=#@=.::-----=====++*%#@@@@@@===-.  
-....=#@+.::--------=====++*%@@@@@#=:      Languages:.....Python, TypeScript, CSS, HTML
+....=#@+.::--------=====++*%@@@@@#=:      Languages:.....Python, TypeScript, HTML, Java
 ....*@%:.:::::-=======++++++**#@@@.    :  Frontend:......React, TypeScript, Tailwind CSS, Next.js
 ...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  Backend:.......Spring Boot, Node.js, Express, Python
 :.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  Database:......PostgreSQL, MongoDB, MySQL, Redis
@@ -35,13 +35,13 @@
                                           Portfolio:.....aladin-daly-dev.vercel.app
 
                                           ━━ GitHub Stats ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                          Repositories:..13 {Contributed: 13} | Stars: 0
-                                          Commits:.......~325 (estimated) | Followers: 2
-                                          Forks:.........0 | Following: 4
-                                          Total Lines:...+1,950 / -650
+                                          Repositories:..18 {Contributed: 18} | Stars: 0
+                                          Commits:.......~450 (estimated) | Followers: 2
+                                          Forks:.........0 | Following: 3
+                                          Total Lines:...+2,700 / -900
                                           Streak:........Building daily!
 
-                                          Last updated: November 24, 2025 at 00:55 UTC
+                                          Last updated: November 25, 2025 at 00:51 UTC
 ```
 
 ---

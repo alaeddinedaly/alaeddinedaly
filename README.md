@@ -1,7 +1,7 @@
 ```
                                           alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ::::::::::::::----=++==-=-::------------  Location:......Tunis, Tunisia
-::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........0 years, 12 months, 0 days
+::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........0 years, 12 months, 1 days
 ::::::::-+%#@@@@@@@@@@@@@@@#+----------=  Status:........Full-Stack Developer & AI Enthusiast
 .::::::=%##@@@@@@@@@@@@@@@@@@*--------==  Company:.......Independent Developer
 ...:::-%#@@@@##%%###@@@@@@@@@@%=----====  Shell:.........Bash, Zsh, PowerShell
@@ -41,7 +41,7 @@
                                           Total Lines:...+2,850 / -950
                                           Streak:........Building daily!
 
-                                          Last updated: December 06, 2025 at 00:50 UTC
+                                          Last updated: December 07, 2025 at 00:58 UTC
 ```
 
 ---

@@ -1,7 +1,7 @@
 ```
                                           alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ::::::::::::::----=++==-=-::------------  Location:......Tunis, Tunisia
-::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........0 years, 12 months, 4 days
+::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........1 years, 0 months, 0 days
 ::::::::-+%#@@@@@@@@@@@@@@@#+----------=  Status:........Full-Stack Developer & AI Enthusiast
 .::::::=%##@@@@@@@@@@@@@@@@@@*--------==  Company:.......Independent Developer
 ...:::-%#@@@@##%%###@@@@@@@@@@%=----====  Shell:.........Bash, Zsh, PowerShell
@@ -36,12 +36,12 @@
 
                                           ━━ GitHub Stats ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
                                           Repositories:..19 {Contributed: 19} | Stars: 0
-                                          Commits:.......~475 (estimated) | Followers: 2
+                                          Commits:.......~475 (estimated) | Followers: 3
                                           Forks:.........0 | Following: 4
                                           Total Lines:...+2,850 / -950
                                           Streak:........Building daily!
 
-                                          Last updated: December 10, 2025 at 00:54 UTC
+                                          Last updated: December 11, 2025 at 00:55 UTC
 ```
 
 ---

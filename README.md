@@ -1,7 +1,7 @@
 ```
                                           alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ::::::::::::::----=++==-=-::------------  Location:......Tunis, Tunisia
-::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........1 years, 1 months, 4 days
+::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........1 years, 1 months, 5 days
 ::::::::-+%#@@@@@@@@@@@@@@@#+----------=  Status:........Full-Stack Developer & AI Enthusiast
 .::::::=%##@@@@@@@@@@@@@@@@@@*--------==  Company:.......Independent Developer
 ...:::-%#@@@@##%%###@@@@@@@@@@%=----====  Shell:.........Bash, Zsh, PowerShell
@@ -35,13 +35,13 @@
                                           Portfolio:.....aladin-daly-dev.vercel.app
 
                                           ━━ GitHub Stats ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                          Repositories:..19 {Contributed: 19} | Stars: 0
-                                          Commits:.......~475 (estimated) | Followers: 3
+                                          Repositories:..18 {Contributed: 18} | Stars: 0
+                                          Commits:.......~450 (estimated) | Followers: 3
                                           Forks:.........0 | Following: 4
-                                          Total Lines:...+2,850 / -950
+                                          Total Lines:...+2,700 / -900
                                           Streak:........Building daily!
 
-                                          Last updated: January 14, 2026 at 00:58 UTC
+                                          Last updated: January 15, 2026 at 00:54 UTC
 ```
 
 ---

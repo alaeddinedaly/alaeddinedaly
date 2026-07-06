@@ -1,13 +1,13 @@
 ```
                                           alaeddinedaly@github ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 ::::::::::::::----=++==-=-::------------  Location:......Tunis, Tunisia
-::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........1 years, 6 months, 26 days
+::::::::::=+*%@@@#@@@@@@#%=-------------  Uptime:........1 years, 6 months, 27 days
 ::::::::-+%#@@@@@@@@@@@@@@@#+----------=  Status:........Full-Stack Developer & AI Enthusiast
 .::::::=%##@@@@@@@@@@@@@@@@@@*--------==  Company:.......Independent Developer
 ...:::-%#@@@@##%%###@@@@@@@@@@%=----====  Shell:.........Bash, Zsh, PowerShell
 ....::+%@%+=-----===++*%%#@@@@@@+--===-   IDE:...........VSCode, IntelliJ IDEA, PyCharm
 ....:=#@=.::-----=====++*%#@@@@@@===-.  
-....=#@+.::--------=====++*%@@@@@#=:      Languages:.....Python, TypeScript, HTML, Java
+....=#@+.::--------=====++*%@@@@@#=:      Languages:.....Python, TypeScript, Kotlin, HTML
 ....*@%:.:::::-=======++++++**#@@@.    :  Frontend:......React, TypeScript, Tailwind CSS, Next.js
 ...:%%+...:-*#@%+===*#@@@@#%*+%@@@   .--  Backend:.......Spring Boot, Node.js, Express, Python
 :.::+%*:.=#@@@#%*=-+%%##%%###**@@@   .::  Database:......PostgreSQL, MongoDB, MySQL, Redis
@@ -35,13 +35,13 @@
                                           Portfolio:.....aladin-daly-dev.vercel.app
 
                                           ━━ GitHub Stats ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-                                          Repositories:..19 {Contributed: 19} | Stars: 0
-                                          Commits:.......~475 (estimated) | Followers: 4
+                                          Repositories:..20 {Contributed: 20} | Stars: 0
+                                          Commits:.......~500 (estimated) | Followers: 4
                                           Forks:.........0 | Following: 5
-                                          Total Lines:...+2,850 / -950
+                                          Total Lines:...+3,000 / -1,000
                                           Streak:........Building daily!
 
-                                          Last updated: July 05, 2026 at 01:56 UTC
+                                          Last updated: July 06, 2026 at 02:03 UTC
 ```
 
 ---
